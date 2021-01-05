@@ -52,3 +52,36 @@ do {
     $i++;
 } while ($i <= 200);
 ?>
+
+<br><br>
+<?php 
+$sinhvien = array(
+    'Nguyễn A',
+    'Nguyễn B',
+    'Nguyễn C',
+    'Nguyễn D',
+    'Nguyễn E',
+    'Nguyễn F'
+    );
+    for ($i = 0; $i < 6; $i++){
+        echo "$sinhvien[$i] <br/>";
+    }
+?>
+
+
+
+<?php 
+$i = 9;
+while ($i <= 10) {
+  echo $i;
+  $i++;
+}
+?>
+
+<?php 
+$i = 0;
+do{
+    echo $i;
+    $i++;
+}while ($i < 1);
+?>

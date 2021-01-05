@@ -1,24 +1,27 @@
 <!-- Switch case -->
 
 <?php
-$check = 'cá';
-if ($check == 'kẹo'){
-    echo 'Ăn kẹo';
-}
-else if ($check == 'bánh'){
-    echo 'Ăn bánh <br/><br/>';
-}
-else if ($check == 'kem'){
-    echo 'Ăn kem <br/><br/>';
-}
-else if ($check == 'thịt'){
-    echo 'Ăn thịt <br/><br/>';
-}
-else if ($check == 'chay'){
-    echo 'Ăn chay <br/><br/>';
-}
-else {
-    echo 'Không đói <br/><br/>';   
+$number = 1;
+switch ($number)
+{
+    case $number > 0 :
+        echo 'Số không';
+        break;
+    case 1:
+        echo 'Số một';
+        break;
+    case 2:
+        echo 'Số hai';
+        break;
+    case 3:
+        echo 'Số ba';
+        break;
+    case 4 :
+        echo 'Số bốn';
+        break;
+    default:
+        echo 'Không tìm thấy';
+        break;
 }
 ?>
 

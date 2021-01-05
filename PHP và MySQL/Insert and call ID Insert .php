@@ -1,7 +1,7 @@
 <?php
 // Kết lối SQL
 $servername = "localhost";
-$database = "test";
+$database = "PHPTraining";
 $username = "root";
 $password = "admin";
 $conn = mysqli_connect($servername, $username, $password, $database);

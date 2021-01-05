@@ -1,6 +1,6 @@
 <?php
     if (isset($_GET["name"]) && isset($_GET["age"]) )
-    {
+     {
         echo 'Tên: ' . $_GET['name'] . '<br>';
         echo 'Tuổi: ' . $_GET['age'];
         exit();
@@ -44,7 +44,7 @@
 <br><br>
 <?php
     if (isset($_POST["name"]) && isset($_POST["age"]) )
-    {
+     {
         echo 'Tên: ' . $_POST['name'] . '<br>';
         echo 'Tuổi: ' . $_POST['age'];
         die();
@@ -67,7 +67,7 @@
 </head>
 <body>
 <div class="container">
-    <form action="get-post.php" method="GET" role="form">
+    <form action="get-post.php" method="POST" role="form">
         <legend>Post files</legend>
 
         <div class="form-group">
