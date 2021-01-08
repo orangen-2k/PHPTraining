@@ -1,17 +1,15 @@
 <?php
 // Kết lối SQL
 $servername = "localhost";
-$database = "PHPTraining";
+$database = "php_example";
 $username = "root";
-$password = "admin";
+$password = "";
 $conn = mysqli_connect($servername, $username, $password, $database);
-// $conn = mysqli_connect($servername, $username, $password);
 
 // Câu SQL Insert
-$sql = "INSERT INTO TestCRUD (familyName, displayName, emailAddress, birthYear, phoneNumber) 
-VALUES ('Nguyễn Thị Thu ', 'Thủy', 'nguyenthithuthuy@gmail.com', '04/03/1998', '09439584553');";
-$sql .= "INSERT INTO News (title, content) 
-VALUES ('Trần Trung ', 'Hiếu', 'trantrunghieu@gmail.com', '05/06/1998', '0348357584');";
+$sql = "INSERT INTO `tb_user` (`id`, `username`, `password`, `email`, `fullname`, `level`, `add_date`) VALUES
+(1, 'admin', '123', 'thehalfheart@gmail.com', 'Nguyễn Văn Cường', 1, NULL);
+";
  
 // Thực hiện thêm record
 if ($conn->multi_query($sql) === TRUE) {

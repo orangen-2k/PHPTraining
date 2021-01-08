@@ -5,7 +5,6 @@ $database = "PHPTraining";
 $username = "root";
 $password = "admin";
 $conn = mysqli_connect($servername, $username, $password, $database);
-// $conn = mysqli_connect($servername, $username, $password);
 
 
 // Câu SQL delete
