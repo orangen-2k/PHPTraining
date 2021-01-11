@@ -6,7 +6,7 @@ $conn = null;
 function db_connect(){
     global $conn;
     if (!$conn){
-        $conn = mysqli_connect('localhost', 'root', 'admin', 'phptraining') 
+        $conn = mysqli_connect('localhost', 'root', '', 'php_example') 
                 or die ('Không thể kết nối CSDL');
         mysqli_set_charset($conn, 'UTF-8');
     }

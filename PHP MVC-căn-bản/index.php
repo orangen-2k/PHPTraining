@@ -10,23 +10,24 @@ $action = isset($_GET['a']) ? $_GET['a'] : '';
 // thì ta lấy module mặc định là common
 // và action mặc định là login
 if (empty($module) || empty($action)){
-    $module = 'common';
-    $action = 'login';
+    $module = 'Passport';
+    $action = 'Login';
 }
  
 // Tạo đường dẫn và lưu vào biến $path
-$path = 'modules/'.$module . '/' . $action . '.php';
+$path = 'Modules/'.$module . '/' . $action . '.php';
  
 // Trường hợp URL chạy đúng
 if (file_exists($path)) {
-    include_once ('../Funtion/session.php');
-    include_once ('../Funtion/database.php');
-    include_once ('../Funtion/role.php');
-    include_once ('../Funtion/helper.php');
+    include_once ('Funtion/Session.php');
+    include_once ('Funtion/Database.php');
+    include_once ('Funtion/Role.php');
+    include_once ('Funtion/Helper.php');
+    include_once ('Funtion/DB.php');
     include_once ($path);
 } 
 else {
     // Trường hợp URL không tồn tại thì thông báo lỗi
-    include_once ('modules/common/404.php');
+    include_once ('Modules/Passport/404.php');
 }
 ?>
