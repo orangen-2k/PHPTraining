@@ -37,4 +37,12 @@ function get_current_level(){
     $user  = is_logged();
     return isset($user['level']) ? $user['level'] : '';
 }
+// Hàm kiểm tra là supper admin
+function is_supper_admin(){
+    $user = is_logged();
+    if (!empty($user['level']) && $user['level'] == '1' && $user['username'] == 'admin'){
+        return true;
+    }
+    false;
+}
 ?>

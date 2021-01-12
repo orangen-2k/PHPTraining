@@ -6,6 +6,7 @@
         <title>Quản lý admin</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
         <style type="text/css">
             #header li{
                 float: left;
@@ -61,28 +62,59 @@
                 color: #fff;
                 text-decoration: none;
                 margin-top: 10px;
-            }
+            }.pagination a, .pagination span{
+    margin-right: 3px;
+}
+.pagination span{
+    display: inline-block;
+    padding: 3px 5px;
+    background: gray;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+table.form{
+    width: 100%;
+}
+table.form td{
+    border: solid 1px #ddd;
+    padding: 5px 10px;
+}
+table.form thead{
+    font-weight: bold;
+}
+.controls{
+    margin: 10px 0px;
+    text-align: right;
+}.form input.long[type="text"]{
+    width: 400px;
+}
+input{
+    outline: none;
+}
         </style>
     </head>
     <body>
         <div id="container">
+<div id="header">
+    <ul>
+        <li>
+            <a href="<?php echo base_url('?m=Manage-User&a=List'); ?>">Người dùng</a>
+        </li>
+        <li>
+            <a href="<?php echo base_url('?m=Passport&a=Dashboard'); ?>">Tin tức</a>
+        </li>
+        <li>
+            <a href="#">Bình Luận</a>
+        </li>
+    </ul>
+    <div>
+        Xin chào <?php echo get_current_username(); ?> |
+        <a href="<?php echo base_url('?m=Passport&a=Logout'); ?>">Đăng xuất</a>
         <?php if (is_admin()){ ?>
-            <div id="header">
-                <ul>
-                    <li>
-                        <a href="#">User</a>
-                    </li>
-                    <li>
-                        <a href="#">Tin tức</a>
-                    </li>
-                    <li>
-                        <a href="#">Bình Luận</a>
-                    </li>
-                </ul>
-                <div>
-                    Xin chào <?php echo get_current_username(); ?> |
-                    <a href="<?php echo base_url('?m=common&a=logout'); ?>">Logout</a>
-                </div>
-            </div>
-            <?php } ?>
+        <a href="<?php echo create_link(base_url(''), array('m' => 'Manage-User', 'a' => 'List')); ?>">Quản lý</a>
+        <?php } ?>
+
+    </div>
+</div>
             <div id="content">
