@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('postForm');
 });
 
 
@@ -330,3 +330,35 @@ Route::get('loi',function (){
 Route::get('nhapdiem',function (){
     return view('nhapdiem');
 })->name('nhapdiem');
+
+
+Route::get('dangnhap',function (){
+    return view('dangnhap');
+});
+
+Route::get('thu',function (){
+    return view('thanhcong');
+});
+
+Route::post('login','App\Http\Controllers\AuthController@login')->name('login');
+
+Route::get('logout','App\Http\Controllers\AuthController@logout');
+
+Route::group(['middeleware'=>['web']],function (){
+   Route::get('Session',function (){
+      Session::put('Khoahoc','Laravel');
+      echo "ok ssss";
+      echo "<br/>";
+      Session::forget('Khoahoc');
+      echo Session::get('Khoahoc');
+       echo "<br/>";
+      if (Session::has('Khoahoc'))
+          echo "có rồi";
+      else
+          echo "ko có";
+   });
+});
+
+
+
+Route::get('tin','App\Http\Controllers\TinController@index');
