@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3defbf3-c76d-4f52-82ad-bee62b4867f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminLoginMiddeware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminLogoutMiddeware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_24_090857_table_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/vendors.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/sweetalert2@10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/notify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/quick_nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/quick_sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/script.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/style.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/formExcel/from.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/passport/forgot.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/passport/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHPLaravel/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../PHPLaravel/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,18 +160,37 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1nTj5BbNDEqVVjbPRVC2NdUcQDl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/user" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\resources\views\admin\user" />
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\resources\views\admin\layout" />
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\resources\views\user" />
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\resources\views\admin" />
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\resources\views\passport" />
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\app" />
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\resources\views\pages" />
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\resources\views" />
+      <recent name="D:\xampp\htdocs\PHPTraining\PHPLaravel2\public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -154,7 +208,7 @@
       <updated>1611420789097</updated>
       <workItem from="1611420802571" duration="842000" />
       <workItem from="1611422441368" duration="471000" />
-      <workItem from="1611449637195" duration="887000" />
+      <workItem from="1611449637195" duration="43216000" />
     </task>
     <servers />
   </component>
@@ -172,5 +226,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
