@@ -123,14 +123,6 @@ Route::get('database',function (){
         $table->string('ten',200)->nullable;
         $table->string('nxs')->default('Nha san xuat');
     });
-    Schema::create('san pham',function ($table){
-        $table->increments('id');
-        $table->string('ten');
-        $table->float('gia');
-        $table->integer('soluong')->default(0);
-        $table->integer('id_loaisanpham')->unsigned();
-        $table->foreign('id_loaisanpham')->references('id')->on('theloai');
-    });
    echo 'Da tao bang';
 });
 
@@ -141,7 +133,7 @@ Route::get('lienketbang',function (){
       $table->float('gia');
       $table->integer('soluong')->default(0);
       $table->integer('id_loaisanpham')->unsigned();
-      $table->foreign('id_loaisanpham')->references('id')->on('theloai');
+      $table->foreign('id_loaisanpham')->references('id')->on('loaisanpham');
    });
 });
 
@@ -205,9 +197,8 @@ Route::get('bd/slect',function (){
 
 
 Route::get('bd/raw',function (){
-    $data = DB::table('users')
-        ->select(DB::raw('id,name as hoten,email'))
-        ->where('id',14)->get();
+    $data = DB::table('users')->select(DB::raw('id,name as hoten,email'))->where('id',14)->get();
+//   var_dump($data);
     foreach ($data as $row){
         foreach ($row as $key=>$value){
             echo $key.":".$value."<br/>";
@@ -220,6 +211,7 @@ Route::get('bd/raw',function (){
 Route::get('bd/oderby',function (){
     $data = DB::table('users')->select(DB::raw('id,name as hoten,email'))
         ->where('id','>',2)->orderBy('id','desc')->get();
+//   var_dump($data);
     foreach ($data as $row){
         foreach ($row as $key=>$value){
             echo $key.":".$value."<br/>";
@@ -232,6 +224,7 @@ Route::get('bd/oderby',function (){
 Route::get('bd/skip',function (){
     $data = DB::table('users')->select(DB::raw('id,name as hoten,email'))
         ->where('id','>',1)->orderBy('id','asc')->skip(1)->take(5)->get();
+//   var_dump($data);
     echo $data->count();
 //    foreach ($data as $row){
 //        foreach ($row as $key=>$value){
@@ -347,9 +340,7 @@ Route::get('thu',function (){
     return view('thanhcong');
 });
 
-Route::get('login',function (){
-    return view('postForm');
-});
+Route::post('login','App\Http\Controllers\AuthController@login')->name('login');
 
 Route::get('logout','App\Http\Controllers\AuthController@logout');
 
