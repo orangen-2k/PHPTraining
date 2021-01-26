@@ -21,3 +21,4 @@ Route::group(['prefix'=>'admin','middleware'=>'checklogin'],function (){
         Route::get('add','UserController@add')->name('add');
     });
 });
+
