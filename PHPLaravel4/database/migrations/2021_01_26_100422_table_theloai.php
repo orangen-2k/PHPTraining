@@ -19,11 +19,6 @@ class TableTheloai extends Migration
             $table->string('tenkhongdau');
             $table->timestamps();
         });
-//        Schema::create('theloai',function (Blueprint $table){
-//            $table->increments('id');
-//            $table->string('ten',200)->nullable;
-//            $table->string('nxs')->default('Nha san xuat');
-//        });
     }
 
     /**

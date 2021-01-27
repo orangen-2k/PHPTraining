@@ -8,14 +8,14 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
-    public function show(){
+    public function getshow(){
         $user = User::all();
         return view('admin.user.show',['user'=>$user]);
     }
-    public function add(){
+    public function getadd(){
         return view('admin.user.add');
     }
-    public function update(){
+    public function getupdate(){
         return view('admin.user.update');
     }
 }

@@ -10,8 +10,9 @@ class loaisanpham extends Model
     use HasFactory;
     protected $table = "loaisanpham";
     public $timestamps = false;
+
     public function sanpham()
-    {
-        return $this->hasMany('App\Models\sanpham','id_loaisanpham','id');
-    }
+        {
+            return $this->hasMany('App\Models\sanpham','id_loaisanpham','id');
+        }
 }
