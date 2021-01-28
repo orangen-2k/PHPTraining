@@ -42,7 +42,7 @@
 <!-- begin:: Page -->
 <div class="m-grid m-grid--hor m-grid--root m-page">
     <div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor m-login m-login--signin m-login--2 m-login-2--skin-2
-			@if (session('error_email'))m-login--forget-password @endif" id="m_login" style="background-image: url(../../../assets/app/media/img//bg/bg-3.jpg);">
+			@if (session('error_email'))m-login--forget-password @endif" id="m_login" style="background-image: url(../../../image/bg-3.jpg);">
         <div class="m-grid__item m-grid__item--fluid	m-login__wrapper">
             <div class="m-login__container">
                 <div class="m-login__logo">
@@ -75,13 +75,13 @@
 <!-- end:: Page -->
 
 <!--begin::Global Theme Bundle -->
-<script src="{!! asset('assets/vendors/base/vendors.bundle.js') !!}" type="text/javascript"></script>
-<script src="{!! asset('assets/demo/base/scripts.bundle.js') !!}" type="text/javascript"></script>
+<!-- <script src="{!! asset('js/vendors.bundle.js') !!}" type="text/javascript"></script> -->
+<script src="{!! asset('js/scripts.bundle.js') !!}" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.5.1/sweetalert2.min.js"></script>
 <!--end::Global Theme Bundle -->
 
 <!--begin::Page Scripts -->
-<script src="{!! asset('assets/snippets/custom/pages/user/login.js') !!}" type="text/javascript"></script>
+<script src="{!! asset('js/login.js') !!}" type="text/javascript"></script>
 <script>
     $(".alert").fadeTo(2000, 500).slideUp(500, function(){
         $(".alert").slideUp(500);

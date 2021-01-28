@@ -19,9 +19,8 @@ class TableUser extends Migration
             $table->string('email')->unique();
             $table->integer('level');
             $table->string('password');
-            $table->integer('number')->default("0963328520");
-            $table->integer('comment_id')->unsigned();
-            $table->foreign('comment_id')->references('id')->on('comment');
+            $table->string('number');
+            $table->integer('comment_id')->nullable();
             $table->timestamps();
         });
     }

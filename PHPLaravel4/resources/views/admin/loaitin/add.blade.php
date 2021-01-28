@@ -46,7 +46,7 @@
                                                                 <label class="col-xl-3 col-lg-3 col-form-label"><span
                                                                         class="text-danger">*</span> Tên loại tin: </label>
                                                                 <div class="col-xl-9 col-lg-9">
-                                                                    <input type="text" name="Name" class="form-control m-input name-field"
+                                                                    <input type="text" name="NameLT" class="form-control m-input name-field"
                                                                            placeholder="Điền tên loại tin" />
                                                                 </div>
                                                             </div>

@@ -42,7 +42,7 @@
 <!-- begin:: Page -->
 <div class="m-grid m-grid--hor m-grid--root m-page">
     <div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor m-login m-login--signin m-login--2 m-login-2--skin-2
-			@if (session('error_email'))m-login--forget-password @endif" id="m_login" style="background-image: url(../../../assets/app/media/img//bg/bg-3.jpg);">
+			@if (session('error_email'))m-login--forget-password @endif" id="m_login" style="background-image: url(../../../image/bg-3.jpg);">
         <div class="m-grid__item m-grid__item--fluid	m-login__wrapper">
             <div class="m-login__container">
                 <div class="m-login__logo">
@@ -54,14 +54,19 @@
                     <div class="m-login__head">
                         <h3 class="m-login__title"></h3>
                     </div>
+                    @if(count($errors) > 0)
+                        <div class="alert alert-danger">
+                            @foreach($errors->all() as $err)
+                                {{$err}}<br/>
+                            @endforeach
+                        </div>
+                    @endif
+                    @if(session('Error'))
+                        <div class="alert alert-danger">
+                            {{session('Error')}}
+                        </div>
+                    @endif
                     <form class="m-login__form m-form" action="login" method="post">
-                        @csrf
-                        @if (session('message'))
-                            <div class="m-alert m-alert--outline alert alert-danger alert-dismissible animated fadeIn" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
-                                <span>{{session('message')}}</span>
-                            </div>
-                        @endif
                         @csrf
                         <div class="form-group m-form__group">
                             <input class="form-control m-input" type="text" placeholder="Tài khoản" name="email" autocomplete="off">
@@ -93,13 +98,13 @@
 <!-- end:: Page -->
 
 <!--begin::Global Theme Bundle -->
-<script src="{!! asset('assets/vendors/base/vendors.bundle.js') !!}" type="text/javascript"></script>
-<script src="{!! asset('assets/demo/base/scripts.bundle.js') !!}" type="text/javascript"></script>
+<!-- <script src="{!! asset('assets/vendors/base/vendors.bundle.js') !!}" type="text/javascript"></script> -->
+<script src="{!! asset('js/scripts.bundle.js') !!}" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.5.1/sweetalert2.min.js"></script>
 <!--end::Global Theme Bundle -->
 
 <!--begin::Page Scripts -->
-<script src="{!! asset('assets/snippets/custom/pages/user/login.js') !!}" type="text/javascript"></script>
+<script src="{!! asset('js/login.js') !!}" type="text/javascript"></script>
 <script>
     $(".alert").fadeTo(2000, 500).slideUp(500, function(){
         $(".alert").slideUp(500);

@@ -21,7 +21,6 @@
     var db = firebase.database().ref().child("notification");
     db.on("value", (snap) => {
         var res = Object.values(snap.val());
-        console.log(res);
         var content = '';
         var count = 0;
         for (let i = res.length - 1; i >= 0; i--) {

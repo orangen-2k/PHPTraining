@@ -2,161 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeeda85-705d-44f5-bd11-dc086f7ee1e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LoaitinController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TintucController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Loaitin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Slide.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Theloai.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Tintuc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/function/function.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/update.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/loaitin/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/loaitin/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/loaitin/update.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/slide/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/slide/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/slide/update.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tintuc/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tintuc/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tintuc/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel/app/Models/loaisanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/../PHPLaravel/app/Models/loaisanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.idea/PHPLaravel3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.idea/commandlinetools/Laravel_1_25_21__8_44_AM.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.idea/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/.styleci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Console/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Exceptions/Handler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Controllers/PassportController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Controllers/UserController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/Authenticate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/LoginMiddleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/LogoutMiddleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/TrustHosts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Providers/AppServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Providers/AuthServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Providers/EventServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/Providers/RouteServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/artisan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/bootstrap/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/bootstrap/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/broadcasting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/cors.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/filesystems.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/hashing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/logging.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/queue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/config/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/database/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/database/seeds/DatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/css/all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/css/css_loading.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/css/style.bundle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/css/vendors.bundle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/image/image-user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/image/logo-login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/js/all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/js/sweetalert2@10.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/public/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/lang/en/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/lang/en/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/lang/en/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/lang/en/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/sass/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/admin.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/layout/_share/footer.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/layout/_share/header.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/layout/_share/notify.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/layout/_share/quick_nav.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/layout/_share/quick_sidebar.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/layout/_share/script.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/layout/_share/sidebar.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/layout/_share/style.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/layout/formExcel/from.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/user/add.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/user/show.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/admin/user/update.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/passport/forgot.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/passport/login.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/user/footer.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/user/header.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/user/user.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/routes/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/routes/channels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/routes/console.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/storage/app/public/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/storage/framework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/storage/framework/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/storage/framework/cache/data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/storage/framework/sessions/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/storage/framework/testing/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/storage/framework/views/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/storage/logs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/tests/CreatesApplication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/tests/Unit/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PHPLaravel3/webpack.mix.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AjaxController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SlideController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/LogoutMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-select.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/0Qbpv_Screenshot from 2021-01-22 14-04-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/2W1HB_Screenshot from 2021-01-22 14-03-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/2W8Pw_Screenshot from 2021-01-21 16-41-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/5qpFU_Screenshot from 2021-01-22 14-03-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/CKmPy_Screenshot from 2021-01-26 14-30-09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/DHl4X_Screenshot from 2021-01-22 17-00-44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/E21tV_Screenshot from 2021-01-22 16-00-41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/H1jew_Screenshot from 2021-01-22 16-00-47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/I4S6H_Screenshot from 2021-01-22 16-00-47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/KxCAh_Screenshot from 2021-01-22 16-00-41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/MR5tz_Screenshot from 2021-01-22 14-03-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/T7CEU_Screenshot from 2021-01-22 16-00-47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/WYxjy_Screenshot from 2021-01-21 16-41-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/WqZLS_Screenshot from 2021-01-26 14-28-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/Y5BWH_Screenshot from 2021-01-22 14-03-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/aEIvG_Screenshot from 2021-01-21 16-44-44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/bg-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/cDCGK_Screenshot from 2021-01-22 14-03-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/d52n4_Screenshot from 2021-01-22 14-03-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/f5P0L_Screenshot from 2021-01-21 16-41-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/h7ywW_Screenshot from 2021-01-21 16-09-21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/nen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/ntaUg_Screenshot from 2021-01-22 14-04-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/ojdwT_Screenshot from 2021-01-22 16-00-47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/q3c6B_Screenshot from 2021-01-22 14-04-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/rvAzz_Screenshot from 2021-01-26 14-29-27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/x1Pgb_Screenshot from 2021-01-26 14-28-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/scripts.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/summernote.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoaitinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoaitinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PassportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PassportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TintucController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TintucController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/LoginMiddeware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/LoginMiddeware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_26_100422_table_theloai.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_100422_table_theloai.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/function/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/function/function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_26_102625_table_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_102625_table_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/vendors.bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/vendors.bundle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/_share/notify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/notify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/_share/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/script.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/_share/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/_share/style.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/_share/style.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/loaitin/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/loaitin/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/loaitin/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/loaitin/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/loaitin/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/loaitin/update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slide/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slide/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slide/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slide/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/slide/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slide/update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/tintuc/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tintuc/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/tintuc/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tintuc/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/tintuc/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tintuc/update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/update.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/passport/forgot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/passport/forgot.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/passport/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/passport/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/user.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,6 +82,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="26/01/2021" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -179,6 +97,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
@@ -302,17 +221,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/category" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../du-an-truong-mam-non" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/image" />
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/resources/views/admin/category" />
       <recent name="$PROJECT_DIR$/resources/views/admin/loaitin" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/tintuc" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/theloai" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/slide" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views" />
@@ -337,6 +256,9 @@
       <workItem from="1611668512636" duration="3574000" />
       <workItem from="1611705343061" duration="106000" />
       <workItem from="1611712403356" duration="27472000" />
+      <workItem from="1611749324846" duration="47000" />
+      <workItem from="1611797704558" duration="29567000" />
+      <workItem from="1611843398320" duration="2296000" />
     </task>
     <servers />
   </component>

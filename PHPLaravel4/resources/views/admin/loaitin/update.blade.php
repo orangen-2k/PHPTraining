@@ -19,7 +19,7 @@
                                                 <div class="col-md-12">
                                                     <div class="m-form__heading">
                                                         <h3 class="m-form__heading-title" style="font-weight: bold">
-                                                            Loại r {{$Type_of_news->ten}}
+                                                            Loại tin {{$Type_of_news->ten}}
                                                             <i data-toggle="m-tooltip" data-width="auto"
                                                                class="m-form__heading-help-icon flaticon-info" title=""
                                                                data-original-title="Thông tin giáo viên"></i>
@@ -46,7 +46,7 @@
                                                                 <label class="col-xl-3 col-lg-3 col-form-label"><span
                                                                         class="text-danger">*</span> Tên loại tin: </label>
                                                                 <div class="col-xl-9 col-lg-9">
-                                                                    <input type="text" name="Name" class="form-control m-input name-field"
+                                                                    <input type="text" name="NameLT" class="form-control m-input name-field"
                                                                            placeholder="Điền tên loại tin" value="{{$Type_of_news->ten  }}"/>
                                                                 </div>
                                                             </div>

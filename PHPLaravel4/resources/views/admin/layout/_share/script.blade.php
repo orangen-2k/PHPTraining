@@ -14,11 +14,9 @@
             })
                 .then(function (response) {
                     location.reload();
-                    console.log(response);
                 })
                 .catch(function (error) {
                     // handle error
-                    console.log(error);
                 })
                 .then(function () {
                     // always executed

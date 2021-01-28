@@ -20,18 +20,18 @@ class CategoryController extends Controller
     public function postadd(Request $request){
         $this->validate($request,
             [
-                'Name'=>'required|min:3|max:100|unique:theloai,ten'
+                'NameTL'=>'required|min:3|max:100|unique:theloai,ten'
             ],
             [
-                'Name.required'=>'Bạn chưa nhập tên thể loại',
-                'Name.min'=>'Tên thể loại phải có từ 3-100 ký tự',
-                'Name.max'=>'Tên thể loại phải có từ 3-100 ký tự',
-                'Name.unique'=>'Tên thể loại đã tồn tại',
+                'NameTL.required'=>'Bạn chưa nhập tên thể loại',
+                'NameTL.min'=>'Tên thể loại phải có từ 3-100 ký tự',
+                'NameTL.max'=>'Tên thể loại phải có từ 3-100 ký tự',
+                'NameTL.unique'=>'Tên thể loại đã tồn tại',
             ]
         );
         $category = new Theloai;
-        $category->ten = $request->Name;
-        $category->tenkhongdau = changeTitle($request->Name);
+        $category->ten = $request->NameTL;
+        $category->tenkhongdau = changeTitle($request->NameTL);
         $category->save();
 //        return redirect()->route('add.category')->with('thongbao','Thêm thể loại thành công');
         return redirect()->route('show.category')->with('Notification','Thêm thể loại '."[ $category->ten ]".' thành công');
@@ -48,17 +48,17 @@ class CategoryController extends Controller
         $category = Theloai::find($id);
         $this->validate($request,
             [
-                'Name'=>'required|unique:theloai,ten|min:3|max:100'
+                'NameTL'=>'required|unique:theloai,ten|min:3|max:100'
             ],
             [
-                'Name.required'=>'Bạn chưa nhập tên thể loại',
-                'Name.min'=>'Tên thể loại phải có từ 3-100 ký tự',
-                'Name.max'=>'Tên thể loại phải có từ 3-100 ký tự',
-                'Name.unique'=>'Tên thể loại đã tồn tại',
+                'NameTL.required'=>'Bạn chưa nhập tên thể loại',
+                'NameTL.min'=>'Tên thể loại phải có từ 3-100 ký tự',
+                'NameTL.max'=>'Tên thể loại phải có từ 3-100 ký tự',
+                'NameTL.unique'=>'Tên thể loại đã tồn tại',
             ]
         );
-        $category->ten = $request->Name;
-        $category->tenkhongdau =  changeTitle($request->Name);
+        $category->ten = $request->NameTL;
+        $category->tenkhongdau =  changeTitle($request->NameTL);
         $category->save();
 //        return redirect()->route('update.category', ['id' => $id])->with('thongbao','Sửa thể loại thành công');
         return redirect()->route('show.category')->with('Notification','Sửa thể loại '."[ $category->ten ]".' thành công');

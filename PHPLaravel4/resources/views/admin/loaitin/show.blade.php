@@ -1,5 +1,5 @@
 @extends('admin.admin')
-@section('title', "Danh sách loại t")
+@section('title', "Danh sách loại tin")
 <link href="{!!  asset('css/css_loading.css') !!}" rel="stylesheet" type="text/css" />
 @section('content')
     <div class="m-content">
@@ -9,7 +9,6 @@
                     <div class="tab-pane active show" id="m_tabs_3_1" role="tabpanel">
                         <div class="m-portlet__body table-responsive">
                             <table id="myTable"  class="table table-striped- table-bordered table-hover table-checkable dataTable dtr-inline">
-                                <thead>
                                 @if(session('Notification'))
                                     <div class="alert alert-success">
                                         {{session('Notification')}}

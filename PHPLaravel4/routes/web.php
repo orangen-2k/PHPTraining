@@ -8,13 +8,12 @@ Route::get('admin/home','PassportController@admin')->name('admin.home')->middlew
 Route::get('user','PassportController@user')->name('user');
 Route::get('user/home','PassportController@user')->name('user.home')->middleware('checklogin');
 
-Route::get('forgot','PassportController@forgot');
-Route::get('login','PassportController@getlogin');
-Route::post('login','PassportController@postlogin');
-Route::get('logout','PassportController@logout');
+Route::get('login','PassportController@getlogin')->name('login');
+Route::post('login','PassportController@postlogin')->name('login');
+Route::get('logout','PassportController@logout')->name('logout');
+Route::get('forgot','PassportController@forgot')->name('forgot');
 
-//Route::group(['prefix'=>'admin','middleware'=>'checklogin'],function (){
-Route::group(['prefix'=>'admin'],function (){
+Route::group(['prefix'=>'admin','middleware'=>'checklogin'],function (){
 
     Route::group(['prefix'=>'category'],function (){
         Route::get('show','CategoryController@getshow')->name('show.category');
@@ -50,6 +49,14 @@ Route::group(['prefix'=>'admin'],function (){
         Route::post('update/{id}','TintucController@postupdate')->name('update.news');
 
         Route::get('delete/{id}','TintucController@getdelete')->name('delete.news');
+    });
+
+    Route::group(['prefix'=>'comment'],function (){
+        Route::get('delete/{id}/{idtintuc}','CommentController@getdelete')->name('delete.comment');
+    });
+
+    Route::group(['prefix'=>'/news/admin/ajax'],function (){
+        Route::get('loaitin/{idtheloai}','AjaxController@getloaitin')->name('show.ajax');
     });
 
     Route::group(['prefix'=>'slide'],function (){

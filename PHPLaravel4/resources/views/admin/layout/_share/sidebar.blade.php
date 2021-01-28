@@ -29,7 +29,7 @@
                 <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
                         <li class="m-menu__item " aria-haspopup="true">
-                            <a href="" class="m-menu__link ">
+                            <a href="{{route('show.user')}}" class="m-menu__link ">
                                 <i class="m-menu__link-bullet m-menu__link-bullet--dot"></i>
                                 <span class="m-menu__link-text">Danh sách tài khoản</span>
                             </a>
@@ -47,7 +47,7 @@
                     <span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
                         <li class="m-menu__item " aria-haspopup="true">
-                            <a href="{{route('show.type_of_news')}}" class="m-menu__link ">
+                            <a href="{{route('show.news')}}" class="m-menu__link ">
                                 <i class="m-menu__link-bullet m-menu__link-bullet--dot"></i>
                                 <span class="m-menu__link-text">Danh sách tin tức</span>
                             </a>
@@ -99,7 +99,7 @@
                 <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
                         <li class="m-menu__item " aria-haspopup="true">
-                            <a href="" class="m-menu__link ">
+                            <a href="{{route('show.slide')}}" class="m-menu__link ">
                                 <i class="m-menu__link-bullet m-menu__link-bullet--dot"></i>
                                 <span class="m-menu__link-text">Danh sách Slide</span>
                             </a>
