@@ -1,12 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Theloai;
 // admin va user
 Route::get('','PassportController@admin')->name('admin')->middleware('checklogin');
 Route::get('admin/home','PassportController@admin')->name('admin.home')->middleware('checklogin');
-Route::get('user','PassportController@user')->name('user');
-Route::get('user/home','PassportController@user')->name('user.home')->middleware('checklogin');
 
 Route::get('login','PassportController@getlogin')->name('login');
 Route::post('login','PassportController@postlogin')->name('login');
@@ -83,5 +81,16 @@ Route::group(['prefix'=>'admin','middleware'=>'checklogin'],function (){
         Route::get('delete/{id}','UserController@getdelete')->name('delete.user');
     });
 });
+
+Route::get('user','UserwebsiteController@gethome')->name('home');
+Route::get('user/home','UserwebsiteController@gethome')->name('show.home');
+Route::get('detail/home/{id}/{tinkhongdau}.html','UserwebsiteController@getdetail')->name('detail.home');
+Route::get('loaitin/home/{id}/{tenkhongdau}.html','UserwebsiteController@getloaitin')->name('loaitin.home');
+Route::get('userhome/home','UserwebsiteController@getuserhome')->name('user.home');
+Route::post('userhome/home','UserwebsiteController@postuserhome')->name('user.home');
+Route::get('userhomedetail/home','UserwebsiteController@getuserhomedetail')->name('userdetail.home');
+Route::post('timkiem','UserwebsiteController@gettimkiem')->name('timkiem.home');
+
+Route::post('comment/home/{id}','CommentController@postcomment')->name('comment.home');
 
 ?>

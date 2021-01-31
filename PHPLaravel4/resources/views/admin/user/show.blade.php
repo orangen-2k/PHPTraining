@@ -38,7 +38,13 @@
                                         <td>{{$item->name}}</td>
                                         <td>{{$item->email}}</td>
                                         <td>{{$item->number}}</td>
-                                        <td>{{$item->level}}</td>
+                                        <td>
+                                            @if($item->level == 1)
+                                                {{"Admin"}}
+                                            @else
+                                                {{"Nguoi dung"}}
+                                            @endif
+                                        </td>
                                         <td>
                                             {{--                                            <a target="_blank" href="sua/{{$item->id}}" class="btn btn-outline-dark m-btn m-btn--icon m-btn--icon-only m-btn--pill m-btn--air">--}}
                                             <a href="{{route('update.user',['id'=>$item])}}" class="btn btn-outline-dark m-btn m-btn--icon m-btn--icon-only m-btn--pill m-btn--air" data-toggle="m-tooltip"  data-original-title="Sửa">

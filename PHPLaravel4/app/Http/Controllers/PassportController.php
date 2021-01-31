@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Tintuc;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,12 +18,6 @@ class PassportController extends Controller
     public function admin()
     {
         return view('admin.admin');
-    }
-
-    // Truyền đến màn .blade.php
-    public function user()
-    {
-        return view('user.user');
     }
 
     // Truyền đến màn forgot.blade.php
@@ -46,9 +41,11 @@ class PassportController extends Controller
         $email =  $request['email'];
         $password =  $request['password'];
         if (Auth::attempt(['email'=>$email,'password'=>$password])){
-            return redirect()->route('admin');
+            $news = Tintuc::orderBy('id','desc')->get();
+            return redirect()->route('admin',['News'=>$news]);
         }elseif (Auth::attempt(['email'=>$email,'password'=>$password])){
-            return redirect()->route('user');
+            $news = Tintuc::orderBy('id','desc')->get();
+            return redirect()->route('home',['News'=>$news]);
         }  else{
             return redirect()->route('login')->with('Error','Tài khoản hoặc mật khẩu không chính xác');
         }

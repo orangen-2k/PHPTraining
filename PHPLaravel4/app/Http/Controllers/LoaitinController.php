@@ -51,14 +51,13 @@ class LoaitinController extends Controller
     public function postupdate(Request $request, $id){
         $this->validate($request,
             [
-                'NameLT'=>'required|min:1|max:100|unique:loaitin,ten',
+                'NameLT'=>'required|min:1|max:100',
                 'Theloai'=>'required'
             ],
             [
                 'NameLT.required'=>'Bạn chưa nhập tên loại tin',
                 'NameLT.min'=>'Tên loại tin phải có từ 1-100 ký tự',
                 'NameLT.max'=>'Tên loại tin phải có từ 1-100 ký tự',
-                'NameLT.unique'=>'Tên loại tin đã tồn tại',
                 'Theloai.required'=>'Bạn chưa chọn thể loại',
             ]
         );

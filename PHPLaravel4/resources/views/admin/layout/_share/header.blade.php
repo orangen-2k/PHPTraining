@@ -6,7 +6,7 @@
             <div class="m-stack__item m-brand  m-brand--skin-dark ">
                 <div class="m-stack m-stack--ver m-stack--general">
                     <div class="m-stack__item m-stack__item--middle m-brand__logo">
-                        <a href="{{ url('login') }}" class="m-brand__logo-wrapper">
+                        <a href="{{ url('user') }}" class="m-brand__logo-wrapper">
                             <img alt="CoolKids"
                                  src="{{asset('image/logo-login.png')}}" style="max-width: 100%;
                                 display: block;

@@ -50,8 +50,6 @@
                                                                            placeholder="Điền tên loại tin" value="{{$Type_of_news->ten  }}"/>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-xl-6">
-                                                                <div class="m-form__section m-form__section--first">
                                                                     <div class="form-group m-form__group row">
                                                                         <label class="col-xl-3 col-lg-3 col-form-label"><span
                                                                                 class="text-danger">*</span>Thể loại:</label>
@@ -67,8 +65,6 @@
                                                                                 @endforeach
                                                                             </select>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                             <div class="col-md-12 d-flex justify-content-end">
                                                                 <div class="m-form__actions">

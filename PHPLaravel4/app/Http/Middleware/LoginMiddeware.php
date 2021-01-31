@@ -21,7 +21,7 @@ class LoginMiddeware
             if ($user->level == 1)
                 return $next($request);
             else
-                return redirect()->route('user');
+                return redirect()->route('home');
         }   else {
             return redirect('login');
         }

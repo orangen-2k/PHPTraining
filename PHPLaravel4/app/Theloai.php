@@ -11,7 +11,7 @@ class Theloai extends Model
 
     public function loaitin()
     {
-        return $this->hasMany('App\Loaitin','idloaitin','id');
+        return $this->hasMany('App\Loaitin','idtheloai','id');
     }
     // xem thể loại có bn tin tức
     public function tintuc()

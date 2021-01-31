@@ -21,20 +21,24 @@ class UserController extends Controller
         $this->validate($request,
             [
                 'NameND'=>'required',
-                'Email'=>'required|min:1|max:100|unique:users,email',
+                'Email'=>'required|email|min:1|max:100|unique:users,email',
+                'Password'=>'required',
+                'Password-again'=>'required|same:Password',
                 'Sđt'=>'required',
                 'Level'=>'required',
-                'Password'=>'required',
             ],
             [
                 'Email.required'=>'Bạn chưa nhập Email',
                 'Email.min'=>'Email phải có từ 1-100 ký tự',
                 'Email.max'=>'Email phải có từ 1-100 ký tự',
+                'Email.email'=>'Email không đúng định dạng',
                 'Email.unique'=>'Email đã tồn tại',
                 'NameND.required'=>'Bạn chưa nhập Tên',
                 'Sđt.required'=>'Bạn chưa nhập số điện thoại',
                 'Level.required'=>'Bạn chưa chọn cấp bậc',
                 'Password.required'=>'Bạn chưa nhập mật khẩu',
+                'Password-again.required'=>'Chuaw nhập lại mật khẩu',
+                'Password-again.same'=>'Mật khẩu nhập lại không chính xác',
             ]
         );
         $user = new User;
@@ -42,7 +46,7 @@ class UserController extends Controller
         $user->email = $request->Email;
         $user->number = $request->Sđt;
         $user->level = $request->Level;
-        $user->password = $request->Password;
+        $user->password = bcrypt($request->Password);
         $user->save();
         return redirect()->route('show.user')->with('Notification','Thêm người dùng '."[ $user->name ]".' thành công');
     }
@@ -56,27 +60,19 @@ class UserController extends Controller
         $this->validate($request,
             [
                 'NameND'=>'required',
-                'Email'=>'required|min:1|max:100',
                 'Sđt'=>'required',
                 'Level'=>'required',
-                'Password'=>'required',
             ],
             [
-                'Email.required'=>'Bạn chưa nhập Email',
-                'Email.min'=>'Email phải có từ 1-100 ký tự',
-                'Email.max'=>'Email phải có từ 1-100 ký tự',
                 'NameND.required'=>'Bạn chưa nhập Tên',
                 'Sđt.required'=>'Bạn chưa nhập số điện thoại',
                 'Level.required'=>'Bạn chưa chọn cấp bậc',
-                'Password.required'=>'Bạn chưa nhập mật khẩu',
             ]
         );
         $user = User::find($id);
         $user->name = "$request->NameND";
-        $user->email = $request->Email;
         $user->number = $request->Sđt;
         $user->level = $request->Level;
-        $user->password = $request->Password;
         $user->save();
         return redirect()->route('show.user')->with('Notification','Sửa tài khoản '."[ $user->email ]".' thành công');
     }

@@ -57,20 +57,52 @@
                                                             </div>
                                                             <div class="form-group m-form__group row">
                                                                 <label class="col-xl-3 col-lg-3 col-form-label"><span
-                                                                        class="text-danger">*</span> Mật khẩu: </label>
-                                                                <div class="col-xl-9 col-lg-9">
-                                                                    <input type="password" name="Password" class="form-control m-input name-field"
-                                                                           placeholder="Điền mật khẩu" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group m-form__group row">
-                                                                <label class="col-xl-3 col-lg-3 col-form-label"><span
                                                                         class="text-danger">*</span> Số điện thoại: </label>
                                                                 <div class="col-xl-9 col-lg-9">
                                                                     <input type="text" name="Sđt" class="form-control m-input name-field"
                                                                            placeholder="Điền số điện thoại" value="{{$User->number}}"/>
                                                                 </div>
                                                             </div>
+{{--                                                            <div class="form-group m-form__group row">--}}
+{{--                                                                <label class="col-xl-3 col-lg-3 col-form-label"><span--}}
+{{--                                                                        class="text-danger">*</span> Quyền: </label>--}}
+{{--                                                                <div class="col-xl-9 col-lg-9">--}}
+{{--                                                                    <label class="radio-inline">--}}
+{{--                                                                        <input name="Lavel" value="2"--}}
+{{--                                                                               @if($User->level == 2)--}}
+{{--                                                                                   {{"checked"}}--}}
+{{--                                                                               @endif--}}
+{{--                                                                               type="radio"/>Thường--}}
+{{--                                                                    </label>--}}
+{{--                                                                    <label class="radio-inline">--}}
+{{--                                                                        <input name="Lavel" value="1"--}}
+{{--                                                                               @if($User->level == 1)--}}
+{{--                                                                                    {{"checked"}}--}}
+{{--                                                                               @endif--}}
+{{--                                                                               type="radio"/>Admin--}}
+{{--                                                                    </label>--}}
+{{--                                                                </div>--}}
+{{--                                                            </div>--}}
+
+{{--                                                            <div class="form-group m-form__group row">--}}
+{{--                                                                <label class="col-xl-3 col-lg-3 col-form-label"><span--}}
+{{--                                                                        class="text-danger">*</span>Loại tin:</label>--}}
+{{--                                                                <div class="col-xl-9 col-lg-9">--}}
+{{--                                                                    <select class="form-control select2" name="Level" id="Loaitinid">--}}
+{{--                                                                        <option value="" selected>Chọn</option>--}}
+{{--                                                                        @foreach ($User as $item)--}}
+{{--                                                                            <option--}}
+{{--                                                                                @if($item->quyen == $item->id)--}}
+{{--                                                                                {{"selected"}}--}}
+{{--                                                                                @endif--}}
+{{--                                                                                value="{{$item->id}}">{{$item->ten}}</option>--}}
+{{--                                                                        @endforeach--}}
+{{--                                                                        <option value="1" selected>Quản lý</option>--}}
+{{--                                                                        <option value="2" selected>Người dùng</option>--}}
+{{--                                                                    </select>--}}
+{{--                                                                </div>--}}
+{{--                                                            </div>--}}
+
                                                             <div class="form-group m-form__group row">
                                                                 <label class="col-xl-3 col-lg-3 col-form-label"><span
                                                                         class="text-danger">*</span>Loại tin:</label>

@@ -51,7 +51,7 @@
                                                                 <label class="col-xl-3 col-lg-3 col-form-label"><span
                                                                         class="text-danger">*</span> Email: </label>
                                                                 <div class="col-xl-9 col-lg-9">
-                                                                    <input type="text" name="Email" class="form-control m-input name-field"
+                                                                    <input type="email" name="Email" class="form-control m-input name-field"
                                                                            placeholder="Điền Email" />
                                                                 </div>
                                                             </div>
@@ -65,6 +65,14 @@
                                                             </div>
                                                             <div class="form-group m-form__group row">
                                                                 <label class="col-xl-3 col-lg-3 col-form-label"><span
+                                                                        class="text-danger">*</span>Nhập lại mật khẩu: </label>
+                                                                <div class="col-xl-9 col-lg-9">
+                                                                    <input type="password" name="Password-again" class="form-control m-input name-field"
+                                                                           placeholder="Điền lại mật khẩu" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group m-form__group row">
+                                                                <label class="col-xl-3 col-lg-3 col-form-label"><span
                                                                         class="text-danger">*</span> Số điện thoại: </label>
                                                                 <div class="col-xl-9 col-lg-9">
                                                                     <input type="text" name="Sđt" class="form-control m-input name-field"
@@ -73,7 +81,7 @@
                                                             </div>
                                                             <div class="form-group m-form__group row">
                                                                 <label class="col-xl-3 col-lg-3 col-form-label"><span
-                                                                        class="text-danger">*</span>Loại tin:</label>
+                                                                        class="text-danger">*</span>Quyền:</label>
                                                                 <div class="col-xl-9 col-lg-9">
                                                                     <select class="form-control select2" name="Level" id="Loaitinid">
                                                                         <option value="" selected>Chọn</option>
